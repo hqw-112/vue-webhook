@@ -5,16 +5,16 @@ let transporter = nodemailer.createTransport({
     port: 465, // SMTP 端口
     secureConnection: true, // 使用了 SSL
     auth: {
-        user: '[email protected]',
+        user: '836861836@qq.com',
         // 这里密码不是qq密码，是你设置的smtp授权码
-        pass: 'zpdf0teyhjfbpcaff',
+        pass: 'jhbhdrhejyeibedf',
     }
 });
 
 
 function sendMail(message){
     let mailOptions = {
-        from: '"83687401" <[email protected]>', // 发送地址
+        from: '"83687401" <836861836@qq.com>', // 发送地址
         to: '836861836@qq.com', // 接收者
         subject: '部署通知', // 主题 
         html:message // 内容主体
